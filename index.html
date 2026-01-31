@@ -3,14 +3,13 @@
 <head>
   <title>Home Page of Mohammad Abdulaziz</title>
 </head>
-  <body>    
-    <!-- <img src="48930022.JPG" style="width:10%;height:10%;"> -->
+  <body>
+  <div style="width: 800px; margin: 0 auto;">
+    <!-- <img src="mohammad-2.jpeg" style="width:10%;height:10%;"> -->
   <figure >
-  <figcaption style="float: left;" > <p> <font size="+3"> <pre>Mohammad Abdulaziz                            </pre></font> <br/><font size="+0">first.last@kcl.ac.uk </br>  (<a href="https://keys.openpgp.org/search?q=mohammad.abdulaziz%40kcl.ac.uk">PGP Key</a>) </br> </br> Room (N)7.15 </br> Bush House 30 Aldwych </br> London </br> WC2B 4BG</font> </br> Office Phone: +44 20 7848 5095</p> </figcaption>
-  <img src="48930022.JPG" style="width:187.5px;height:250px;"
-       alt=""
-       
-  >
+  <figcaption style="float: left;" > <p> <font size="+3"> <pre>Mohammad Abdulaziz              </pre></font><br/><font size="+0">first.last@kcl.ac.uk </br>  (<a href="https://keys.openpgp.org/search?q=mohammad.abdulaziz%40kcl.ac.uk">PGP Key</a>) </br> </br> Room (N)7.15 </br> Bush House 30 Aldwych </br> London </br> WC2B 4BG</font> </br> Office Phone: +44 20 7848 5095</p> </figcaption>
+  <img src="mohammad-2.jpg" style="width:187.5px;height:250px;"
+       alt="">
   </figure>
 
   <!-- <figure > -->
@@ -18,11 +17,20 @@
   <!-- </figure> -->
 
   
-    <p style="width: 800px;"><b>Bio:</b>
+    <p style="width: 800px;"><br/><b>Bio:</b>
+
       I am a lecturer (equiv. to assistant professor) and member of the <a href="https://www.kcl.ac.uk/research/rap">Reasoning and Planning Group</a> at King's College London. Before that, I was a post-doc in the  <a href="http://www21.in.tum.de/">Chair for Logic and Verification</a>  at Technische Universit&auml;t M&uuml;nchen. I was awarded my PhD from the Australian National University, and, before that, an MSc from Cairo University. I also held full-time industry R&D positions from 2009 to 2013 in electronics CAD software and FPGA system design.
     </p>
 
-    <p><b>Research Interests:</b></p>
+    <p style="width: 800px; text-align: center;">
+      <a href="#research">Research Interests</a> | 
+      <a href="#publications">Publications</a> | 
+      <a href="#formalisations">Formalisations</a> | 
+      <a href="#software">Software</a> |
+      <a href="#supervision">Supervision</a>
+    </p>
+
+    <p id="research"><b>Research Interests:</b></p>
       <ul style="width: 800px;">
 	<li> Formalising mathematics in Isabelle/HOL. E.g. 
         <ul>
@@ -66,20 +74,18 @@
     </p>
 
 
-    <p><b>Working Papers:</b></p>
+    <p id="publications"><b>Publications:</b></p>
+
+    <p id="publications"><i>Working Papers:</i></p>
     <ul style="width: 800px;">
 
       <li>
         <a href="papers/hol-to-imp.pdf">Proof-Producing Translation of Functional Programs into a Time and Space Reasonable Model </a>
         <br /> Kevin Kappelmann, Lukas Stevens, Fabian Huch, and Mohammad Abdulaziz
       </li>
-      <li>
-        <a href="papers/blossom_paper.pdf">A Formal Correctness Proof of Edmonds' Blossom Shrinking Algorithm </a>
-        <br /> Mohammad Abdulaziz and Kurt Mehlhorn
-      </li>
     </ul>
 
-    <p><b>Book Chapters:</b></p>
+    <p><i>Book Chapters:</i></p>
     <ul style="width: 800px;">
       <li>
 	<a href="https://fdsa-book.net//functional_data_structures_algorithms.pdf#chapter.24">Graph Algorithms </a>
@@ -88,8 +94,14 @@
       </li>
     </ul>
 
-    <p><b>Journal Publications:</b></p>
+    <p><i>Journal Publications:</i></p>
     <ul style="width: 800px;">
+      <li>
+        <a href="papers/blossom_paper.pdf">A Formal Correctness Proof of Edmonds' Blossom Shrinking Algorithm </a>
+        <br /> Mohammad Abdulaziz and Kurt Mehlhorn
+        <br />Accepted for publication at the Journal of Automated Reasoning, 2025
+      </li>
+
       <li>
 	<a href="papers/Greens_journal.pdf">An Isabelle/HOL Formalisation of Green's Theorem </a>
         <br />Mohammad Abdulaziz and Lawrence C Paulson
@@ -102,7 +114,7 @@
         <br />Journal of Automated Reasoning, 2018
       </li>
     </ul>
-    <p><b>Conference Publications:</b></p>
+    <p><i>Conference Publications:</i></p>
     <ul style="width: 800px;">
       <li>
         <a href="papers/matroids-greedoids.pdf">A Formal Analysis of Algorithms for Matroids and Greedoids</a>
@@ -203,7 +215,7 @@
       <!-- 	Sherif M Saif, Mohamed Dessouky, Salwa Nassar, Hazem Abbas, M Watheq El-Kharashi, and Mohammad Abdulaziz. Exploiting Satisfiability Modulo Theories for Analog Layout Automation. In International Design and Test Symposium (IDT), pages 1-6. IEEE, 2014. -->
       <!-- </li> -->
     </ul>
-    <p><b>Workshop Publications:</b></p>
+    <p><i>Workshop Publications:</i></p>
     <ul style="width: 800px;">
       <li>
 	<a href="papers/optimalSMT.pdf"> Cost Optimal Planning as Satisfiability </a>
@@ -227,7 +239,7 @@
       </li>
     </ul>
 
-    <p><b>Formalisations:</b></p>
+    <p id="formalisations"><b>Formalisations:</b></p>
     <ul style="width: 800px;">
       <li>
 	A formalisation of the semantics of a fragment of PDDL <a href="https://www.isa-afp.org/entries/AI_Planning_Languages_Semantics.html"> AFP Entry</a>
@@ -245,7 +257,7 @@
 	A porting of some of the HOL4 factored system theory in Isabelle/HOL <a href="https://www.isa-afp.org/entries/Factored_Transition_System_Bounding.html"> AFP Entry</a>
       </li>
     </ul>
-    <p><b>Software:</b></p>
+    <p id="software"><b>Software:</b></p>
     <ul style="width: 800px;">
       <li>
 	FormPlan: A Formally Verified Planning Toolkit <a href="https://formplan.github.io"> Website</a>
@@ -258,29 +270,33 @@
       </li>
     </ul>
     <div id="students"></div>
-    <p><b>Opportunities for students:</b></p>
-    <ul style="width: 800px;">
-      <!-- <li> -->
-      <!--   Fully-funded PhD positions: -->
-      <!-- <ul> -->
-      <!--   <li> -->
-      <!--    Two fully funded projects (<a href="https://safeandtrustedai.org/project/formal-reasoning-about-golog-programs/"> project 1 </a> and <a href="https://safeandtrustedai.org/project/verification-of-matching-algorithms-for-social-welfare/"> project 2</a>) with the UKRI Centre for Doctoral Training on Safe and Trusted AI, which is a joint centre between King's College London and Imperial College London. If you would like to work on either project please contact me and consider <a href="https://safeandtrustedai.org/apply-now/"> applying</a>. -->
-      <!--   </li> -->
-      <!--   <li> -->
-      <!--    There is a fully-funded PhD that is not tied to a specific topic. Please contact me if you want to apply to that. I expect you to have taken a look into my publications and these project <a href="themes.html">themes</a>, and to have made-up your mind as to what themes you find interesting. Then we could come-up with a more concrete topic. -->
-      <!--   </li> -->
-      <!-- </ul> -->
-      <li>
-        If you want to do a Phd (or a Master Bachelor or a Bachelor) with me, please take a look into these <a href="themes.html">themes</a> and let me know what you find interesting. Then we could come-up with a more concrete topic.
-      </li>
-    </ul>
-    <p><b>Supervision:</b></p>
+    <!-- <p><b>Opportunities for students:</b></p> -->
+    <!-- <ul style="width: 800px;"> -->
+    <!--   <\!-- <li> -\-> -->
+    <!--   <\!--   Fully-funded PhD positions: -\-> -->
+    <!--   <\!-- <ul> -\-> -->
+    <!--   <\!--   <li> -\-> -->
+    <!--   <\!--    Two fully funded projects (<a href="https://safeandtrustedai.org/project/formal-reasoning-about-golog-programs/"> project 1 </a> and <a href="https://safeandtrustedai.org/project/verification-of-matching-algorithms-for-social-welfare/"> project 2</a>) with the UKRI Centre for Doctoral Training on Safe and Trusted AI, which is a joint centre between King's College London and Imperial College London. If you would like to work on either project please contact me and consider <a href="https://safeandtrustedai.org/apply-now/"> applying</a>. -\-> -->
+    <!--   <\!--   </li> -\-> -->
+    <!--   <\!--   <li> -\-> -->
+    <!--   <\!--    There is a fully-funded PhD that is not tied to a specific topic. Please contact me if you want to apply to that. I expect you to have taken a look into my publications and these project <a href="themes.html">themes</a>, and to have made-up your mind as to what themes you find interesting. Then we could come-up with a more concrete topic. -\-> -->
+    <!--   <\!--   </li> -\-> -->
+    <!--   <\!-- </ul> -\-> -->
+    <!--   <li> -->
+    <!--     If you want to do a Phd (or a Master Bachelor or a Bachelor) with me, please take a look into these <a href="themes.html">themes</a> and let me know what you find interesting. Then we could come-up with a more concrete topic. -->
+    <!--   </li> -->
+    <!-- </ul> -->
+    <p id="supervision"><b>Supervision:</b></p>
     <p>I have been fortunate to work with:</p>
+
+    <ul style="width: 800px;">
+      <li> <a href="https://www21.in.tum.de/team/schaeffeler/index.html"> Maximilian Sch&auml;ffeler</a> (Post-Doc at KCL, 2026-)</li>
+    </ul>
 
     <ul style="width: 800px;">
       <li> <a href="https://toamme.github.io/">Thomas Ammer</a> (PhD at KCL, 2023-)</li>
       <li> <a href="https://david-wang.at/"> David Wang </a>(PhD at KCL, 2023-)</li>      
-      <li> <a href="https://www21.in.tum.de/team/schaeffeler/index.html"> Maximilian Sch&auml;ffeler</a> (PhD at TUM, 2021-, co-supervised with Prof. Tobias Nipkow)</li>
+      <li> <a href="https://www21.in.tum.de/team/schaeffeler/index.html"> Maximilian Sch&auml;ffeler</a> (PhD at TUM, 2021-2025, co-supervised with Prof. Tobias Nipkow)</li>
     </ul>
 
     <ul style="width: 800px;">
@@ -305,5 +321,6 @@
       <li> Dominik Berger: <b> Computing Upper Bounds on Plan Lengths</b> (BSc at TUM, 2019) </li>
     </ul>
 
+  </div>
   </body>
 </html>
